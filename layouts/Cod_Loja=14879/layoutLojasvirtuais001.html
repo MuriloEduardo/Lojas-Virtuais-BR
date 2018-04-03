@@ -1,0 +1,988 @@
+<style>
+    @import url('https://fonts.googleapis.com/css?family=EB+Garamond|Montserrat');
+    * {
+        font-family: 'Montserrat', sans-serif;
+    }
+    :root {
+        --y-primary: #dec455;
+        --y-secondary: #debd31;
+    }
+    body {
+        background-image: url('arquivos_loja/14879/arquivo/rectangle-47-min.png');
+    }
+    #id_tabela_central {
+        background: #fff;
+        margin-top: 0;
+        padding-top: 15px;
+    }
+    .login_inativo span {
+        display: inline-block;
+        color: #fff;
+    }
+    .login_inativo a {
+        display: inline-block!important;
+        padding: 0!important;
+        color: var(--y-primary)!important;
+    }
+    #infos-one,
+    #primaryMenu {
+        background-image: url('arquivos_loja/14879/arquivo/rectangle-48.png');
+    }
+    #infos-one {
+        border-bottom: solid 5px #000;
+    }
+    ul#telefones * {
+        color: #fff;
+        display: inline-block!important;
+        vertical-align: middle!important;
+        top: initial;
+        position: static;
+    }
+    ul#telefones .televenda_whatsapp:before {
+        content: '/';
+        margin-right: 6px;
+    }
+    ul#bemvindo {
+        margin: 16.5px 0!important;
+    }
+    #navbar2 {
+        width: 85%;
+        float: right;
+    }
+    #navbar2 .nav.navbar-nav {
+        width: 100%;
+    }
+    #navbar2 .nav.navbar-nav li {
+        float: right;
+    }
+    #actionPesquisaTopo {
+        position: absolute;
+        right: 0;
+        color: var(--y-secondary);
+        background-color: #000;
+        text-align: center;
+        border-left: solid thin #4c4c4c;
+        padding: 7.5px;
+        font-size: 32px;
+        cursor: pointer;
+    }
+    #procurarPalavraTopo,
+    #searchCarrinho .btn {
+        background-color: #2b2b2b!important;
+        border-color: #2b2b2b!important;
+        border-radius: 0;
+        height: 47px;
+        line-height: 30px;
+        font-size: 16px;
+    }
+    #searchCarrinho .btn {
+        padding-left: 44px;
+        padding-right: 44px;
+        color: #fff;
+        text-align: center;
+        margin-left: 10px;
+    }
+    #procurarPalavraTopo::-webkit-input-placeholder,
+    #procurarPalavraTopo,
+    .navbar-default .navbar-nav>li>a.btn.btn-default .material-icons {
+        color: var(--y-secondary)!important;
+    }
+    .navbar-default .navbar-nav>li>a.btn.btn-default .material-icons,
+    .navbar-default .navbar-nav>li>a.btn.btn-default span {
+        float: none!important;
+        display: inline-block;
+        margin: 0!important;
+        vertical-align: middle;
+    }
+    #menusPrincipais li a {
+        background-color: #000;
+        color: #fff;
+        margin-left: 10px;
+        box-shadow: 0 10px 20px rgba(0,0,0,.8), 0 6px 6px rgba(0,0,0,.8);
+        border-radius: 0;
+        font-family: 'EB Garamond', serif;
+        font-size: 16px;
+    }
+    #logo_loja {
+        max-height: 100%;
+        max-width: 100%;
+    }
+    #searchCarrinho {
+        margin-top: 80px;
+    }
+    li.search {
+        width: 500px !important;
+    }
+    #primaryMenu {
+        border-bottom: solid 15px #000;
+    }
+    #id_div_esquerda .panel {
+        border-radius: 0;
+        border-color: transparent;
+        box-shadow: none;
+    }
+    .divlateral .nav>li>a[aria-expanded="true"] {
+        background-color: #454444;
+        color: #fff;
+    }
+    .divlateral .nav:not(.nav-list)>li:nth-child(odd) {
+        background-color: #f5f5f5!important;
+    }
+    .nav-list>li {
+        background: #fff;
+    }
+    .bot_solicitar_cotacao_vit {
+        border: solid 3px #fbdd34!important;
+        color: #454444!important;
+    }
+    #id_Vitrine .ProdutoVitrine .produto_unico .botao {
+        border-radius: 0;
+        font-size: 14px;
+    }
+    .desenvolvido_por {
+        display: none;
+    }
+    .NewsEsq {
+        display: none;
+    }
+    .NewsCampoEmail.row {
+        padding-top: 15px;
+    }
+    .NewsletterGeral {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .NewsCampoEmail h4 {
+        color: #fbdd34;
+        font-size: 20px;
+        font-family: 'EB Garamond', serif;
+    }
+    .NewsCampoEmail h5 {
+        color: #fff;
+    }
+    .RodNewsletter {
+        background-color: #4a4a4a;
+    }
+    .NewsInserirEmail,
+    .NewsInserirEmail {
+        border-radius: 2px!important;
+    }
+    .NewsBtnEnviar {
+        border-radius: 0!important;
+        background-color: #000!important;
+        border-color: #000!important;
+        color: #f8d013!important;
+        text-transform: uppercase;
+    }
+    footer {
+        background-color: #e1e1e1;
+    }
+    footer * {
+        font-weight: bold;
+    }
+    footer div[class^='col-']:not(:first-child) {
+        border-left: solid 2px #d3d3d3;
+    }
+    .row-eq-height {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display:         flex;
+    }
+    #menu-insti * {
+        text-transform: uppercase;
+        color: #000;
+    }
+    #menu-insti .tit-menus-footer {
+        margin-bottom: 30px;
+    }
+    #menu-insti .tit-menus-footer a {
+        font-family: 'EB Garamond', serif;
+    }
+    #menu-insti li:not(.tit-menus-footer) {
+        margin: 5px 0;
+    }
+    footer h3 {
+        color: #000;
+        text-transform: uppercase;
+        margin-top: 0;
+        font-size: 18px;
+    }
+    .redesociais {
+        margin-bottom: 20px;
+    }
+    .redesociais * {
+        color: #4a4a4a;
+    }
+    .redesociais img {
+        width: 30px;
+        height: 30px;
+    }
+    #formasdepagamentosection {
+        border-top: solid 3px #fbdd34;
+        border-bottom: solid 3px #fbdd34;
+        background-color: #fff;
+        float: left;
+        width: 100%;
+        padding: 10px 0;
+    }
+    img {
+        max-width: 100%!important;
+        max-height: 100%!important;
+    }
+    #sidenav1 *:not(i) {
+        text-transform: uppercase;
+    }
+    .login_ativo a {
+        color: #fff!important;
+        padding-top: 0!important;
+        padding-bottom: 0!important;
+    }
+    #sua-conta i {
+        position: initial;
+        top: initial;
+        line-height: initial;
+    }
+    #infos-one {
+        z-index: 2;
+    }
+    .dropdown-menu>li>a {
+        color: #333!important;
+    }
+    .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+        background-color: transparent;
+    }
+    @media (max-width: 576px) {
+        .login_ativo {
+            width: 100%;
+            text-align: right;
+        }
+        .dropdown-menu * {
+            text-align: right;
+            color: #fff!important;
+        }
+        #logo_loja {
+            max-height: 100px!important;
+        }
+        button[data-target="#navbar2"] {
+            margin: 42.5px 15px 42.5px 0!important;
+        }
+        #navbar2 {
+            width: initial;
+            float: none;
+        }
+        #navbar2 .nav.navbar-nav li {
+            float: none;
+            width: 100%;
+        }
+        #menusPrincipais li a {
+            box-shadow: none;
+            margin-left: 0;
+        }
+        .search input,
+        li.search {
+            opacity: 1;
+            width: 100%!important;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        footer * {
+            text-align: center!important;
+        }
+        .row-eq-height {
+            display: initial!important;
+        }
+        .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu>li>a {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        footer div[class^='col-']:not(:first-child) {
+            border: none;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        .login_ativo {
+            width: 100%;
+            text-align: right;
+        }
+        .dropdown-menu {
+            right: 0;
+            left: auto;
+        }
+        #logo_loja {
+            max-height: 100px!important;
+        }
+        .navbar-default .navbar-toggle {
+            margin: 42.5px 15px 42.5px 0!important;
+        }
+        #navbar2 {
+            width: initial;
+            float: none;
+        }
+        #navbar2 .nav.navbar-nav li {
+            float: none;
+            width: 100%;
+        }
+        #menusPrincipais li a {
+            box-shadow: none;
+            margin-left: 0;
+        }
+        .search input,
+        li.search {
+            opacity: 1;
+            width: 100%!important;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        #searchCarrinho {
+            margin-top: 15px;
+        }
+    }
+    @media (min-width: 1024px) and (max-width: 1025px) {
+        #searchCarrinho {
+            margin-top: 25px;
+        }
+        li.search {
+            margin-top: 15px;
+        }
+    }
+</style>
+<!------------- INICIO TOPO -------------->      
+[html_script_topo]
+<nav id="infos-one" class="navbar navbar-inverse navbar-static-top">
+	<div class="container">
+    <div id="navbar" class="navbar-collapse">
+        <!-- Lado Esquerdo -->
+        <ul id="bemvindo" class="nav navbar-nav">
+            <li class="login_inativo">
+                <span>Seja bem-vindo! Faça </span>
+                <a href="login.php" target="_self">login</a>
+                <span> ou </span>
+                <a href="novo_cliente.php" target="_self">cadastre-se</a>
+            </li>
+            <li class="login_ativo dropdown">
+                <a href="javascript:void(0)" id="sua-conta" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Sua Conta</span><i class="material-icons">keyboard_arrow_down</i></a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-header">[cliente]</li>
+                    <li><a href="novo_cliente.php?editar=true">Editar Cadastro</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="index.php?logoff=1">Sair</a></li>
+                </ul>
+            </li>
+        </ul>
+      <!-- Lado Direito -->
+      <ul id="telefones" class="nav navbar-nav navbar-right">
+        <li class="pull-left">
+          <a href="contato.php" target="_self">
+            <span class="telefone telefone_loja">[fone]</span>
+            <span class="televenda_whatsapp">[celular]</span>
+            <img src="arquivos_loja/14879/arquivo/layer-1.png" alt="">
+          </a>
+        </li>
+        <li class="class_atendimento_online">
+            <a href="javascript:void(false);" onclick="window.open('https://www.htalk.com.br/atendimento/cliente.php?id=[cod_atendimento_online]','atendimento', 'width=470,height=500,resizable=1,scrollbars=0,directories=0,location=0,toolbar=0,menubar=0')" title="Atendimento Online">
+                <span class="hidden-xs">Chat On-line</span>
+                <!-- <i class="material-icons barra1_chat">forum</i> -->
+                <img src="arquivos_loja/14879/arquivo/rounded-rectangle-70-copy.png" alt="">
+            </a>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+<nav id="primaryMenu" class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2" aria-expanded="false" aria-controls="navbar2">
+        <span class="sr-only">Menu Principal</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="javascript:void(0)" class="navbar-toggle visible-sm collapsed" data-toggle="collapse" data-target="#navbar3" aria-expanded="false" aria-controls="navbar3">
+        <span>Departamentos</span>
+      </a>
+      <a href="javascript:void(0)" class="navbar-toggle visible-sm collapsed" data-toggle="collapse" data-target="#navbar4" aria-expanded="false" aria-controls="navbar4">
+        <span>Informações</span>
+      </a>
+      <div class="navbar-brand">[logo]</div>
+    </div>
+    <div id="navbar2" class="navbar-collapse collapse">
+      <!-- Lado Esquerdo -->
+      <ul id="menusPrincipais" class="nav navbar-nav navbar-right">
+        <li><a href="contato.php" target="_self">Fale Conosco</a></li>
+        <li><a href="oferta.php" target="_self">Promoções</a></li>
+        <li><a href="lancamento.php" target="_self">Lançamentos</a></li>
+        <li><a href="index.php" target="_self">Home</a></li>
+      </ul>
+      <!-- Lado Direito -->
+      <ul id="searchCarrinho" class="nav navbar-nav navbar-right">
+        <li><a href="carrinho.php" target="_self" class="btn btn-default">Finalizar Pedido</a></li>
+        <li>
+        <a href="carrinho.php" target="_self" class="btn btn-default">
+            <i class="material-icons pull-left">shopping_cart</i>
+            <span>[qtde_de_itens_no_carrinho] Itens</span>
+        </a>
+        </li>
+        <li class="search">
+            <form id="searchTopo" action="consulta.php" method="get">
+                <div class="search-content">
+                <i id="actionPesquisaTopo" class="material-icons">search</i>
+                <input id="procurarPalavraTopo" type="text" class="form-control" placeholder="Faça sua busca aqui" name="palavra" required>
+                </div>
+            </form>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+<nav class="visible-xs hide-sm navbar navbar-default onlyMobileMenu navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="javascript:void(0)" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar3" aria-expanded="false" aria-controls="navbar3">
+        <span>Departamentos</span>
+      </a>
+      <a href="javascript:void(0)" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#navbar4" aria-expanded="false" aria-controls="navbar4">
+        <span>Informações</span>
+      </a>
+    </div>
+    </div>
+</nav>
+<section class="visible-xs visible-sm menus-responsivos">
+  <div class="container">
+    <div id="navbar3" class="navbar-collapse collapse"></div>
+    <div id="navbar4" class="navbar-collapse collapse"></div>
+    </div>
+</section>
+<section class="container">
+    <div class="row">
+        <div id="id_banner_Full"></div>
+        <div id="id_banner_produto"></div>
+    </div>
+</section>
+<span id="top-link-block" class="hidden">
+    <a href="#top" class="well well-sm" target="_self" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+		<i class="material-icons">keyboard_arrow_up</i>
+    </a>
+</span>
+
+<!-- FIM TOPO -->
+<div class="divcentral container" id="id_tabela_central" >	
+	<div class="row">
+
+        <!-- INICIO ESQUERDA -->
+        <div class="divlateral col-md-3 hidden-xs hidden-sm" id="id_div_esquerda">
+            <div class="lat_total">
+                <div class="panel panel-default">
+                    <!-- <div class="LatTit panel-heading">Departamentos</div> -->
+                    <div id="cssmenu" class="cssmenu navbar-collapse collapse sidebar-navbar-collapse"></div>
+                </div>
+
+                <!-- <div class="panel panel-default login-panel">
+                    <div class="LatTit panel-heading">Login</div>
+                    <div class="caixaTexto">
+                        <div class="caixa_login">[caixa_login]</div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="LatTit panel-heading">Informações</div> 
+                    <div id="cssmenu_pagina_interna" class="cssmenu"></div>
+                </div> -->
+
+                <div align="center" id="dive7rLeftBottom"></div> <!-- propaganda -->
+                [ebit][html_banner_script_esquerda][publicidade_lojas_virtuais_br]
+                <div align="center" id="id_banner_Lateral_Esquerda"></div><!-- banner do sistema -->
+            </div>
+        </div>
+        <!-- FIM ESQUERDA -->
+
+        <!-- INICIO CENTRO -->
+        <div class="td_central col-md-9 col-xs-12" id="id_td_central">
+            <div align="center" id="dive7rCenterTop"></div>    
+            <div id="id_banner_Central" align="center"></div>      
+            [conteudo]
+        </div>
+        <!-- FIM CENTRO -->
+
+        <!-- INICIO DIREITA -->      
+        <div class="divlateral col-md-2 col-xs-12" id="id_div_direita">
+            <div id="contentDireitaCol">
+                [html_banner_script_direita]
+            </div>
+            <div align="center" id="id_banner_Lateral_Direita"></div>
+        </div>
+        <!-- FIM DIREITA -->
+	</div>
+</div>
+
+<!-- INICIO RODAPE -->      
+[cadastramento_email]
+<footer class="rod_total">
+    <div align="center" id="id_banner_Rodape"></div>
+    <div class="container">
+    	<div class="row">
+            <div class="col-md-12">
+            	<div class="row row-eq-height">
+                    <div class="col-md-2">
+                        [logo]
+                    </div>
+                    <div class="col-md-3" id="menu-insti">
+                        <ul class='menus-footer'> 
+                            <li  class='tit-menus-footer'><a href="javascript:void(0)"><h3>Institucional</h3></a></li>
+                            <li><a href="interna.php?cod=54350" target="_self">Quem Somos</a></li>
+                            <li><a href="interna.php?cod=54348" target="_self">Politicas de Privacidade</a></li>
+                            <li><a href="interna.php?cod=166701" target="_self">Politica de Troca</a></li>
+                            <li><a href="indique.php" target="_self">Indique o Site</a></li>
+                            <li><a href="contato.php" target="_self">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="meio_info">
+                            <!-- <div class="meio_info_end">[rodape]</div> -->
+                            <h3>Redes Sociais</h3>
+                            <div class="redesociais">
+                                <span>[imagem_p_facebook]</span>
+                                <img src="arquivos_loja/14879/arquivo/whatsapp.png" alt="">
+                                <span>[celular]</span>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <h3>Formas de Envio</h3>
+                            <img src="arquivos_loja/14879/arquivo/layer-7.png" alt="">
+                        </div>
+                        <!-- <div class="barra_meio_inf_total">
+                            <div class="barra_meio_inf">
+                                [html_2_rodape]
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="arquivos_loja/14879/arquivo/certificado.png" alt="">
+                        <br>
+                        <img src="arquivos_loja/14879/arquivo/protect.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<section id="formasdepagamentosection">
+    <div class="conntainer text-center">
+        <img src="arquivos_loja/14879/arquivo/layer-8.png" alt="">
+    </div>
+</section>
+<div class="modal fade" id="modal-produto" tabindex="-1" role="dialog" aria-labelledby="modal-produto">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h3 class="modal-title"></h3>
+      </div>
+      <div class="modal-body">
+        <div class="row vertical-align-modal" id="row-prdt">
+            <div class="col-md-6">
+                <div id="foto-produto" class="thumbnail"></div>   
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <h3 id="titulo-prdt" class="text-center"></h3>
+                </div>
+                <div class="form-group text-center btns-modal-prdt">
+                    <a id="comprar-prdt" href="#" class="btn btn-primary form-control">Comprar Produto</a>
+                    <a id="soli-cot" href="#" class="btn fade in btn-default bot_solicitar_cotacao_vit form-control">Solicitar Cotação</a>
+                    <input type="button" id="img-indisponivel" class="btn btn-warning form-control" disabled="true" value="Indisponível">
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+    $(document).ready(function() {
+		
+		//************ login ativo ou inativo ****/
+		$('.login_inativo, .login_ativo').hide();
+	
+		if('[cliente]'==''){//se não esta logado		  
+		  $('.login_inativo').show();
+		}else{
+		  $('.login_ativo').show();
+		}
+		  
+		  
+		$('#procurarPalavraTopo').click(function(event) {
+		  if(!$('#procurarPalavraTopo').val().length) {
+			$('li.search').toggleClass('opend');
+		  }
+		});
+		$('#procurarPalavraTopo').blur(function(event) {
+		  if(!$('#procurarPalavraTopo').val().length) {
+			$('li.search').toggleClass('opend');
+		  }
+		});
+		$('#actionPesquisaTopo').click(function(event) {
+		  if($('#procurarPalavraTopo').val().length) {
+			  $('#searchTopo').submit();
+		  }
+		});
+
+        
+        var Mypagina = document.URL.split('/');
+        Mypagina = $(Mypagina).get(-1);
+
+		//*********** menu de departamento e categoria *****/
+        $("#cssmenu").ready(function () {
+        	var jqxhr = $.getJSON( "json/departamentos_categorias.php", function() {}).done(function(data ) {
+        		var items = [];
+                var itemsMobile = [];
+                var i = 0;
+                
+                var open_drop=Menu_Tipo>3?'':'open in',
+                aria_expanded=Menu_Tipo>3?false:true,
+                collapsed=Menu_Tipo>3?'collapsed':'';
+
+                /* 
+                1 = Departamento e Categoria (Aberto)
+                2 = Departamento e Categoria (Aberto com total de Produtos)
+                3 = Só Departamento (Aberto)
+                4 = Departamento e Categoria (Fechado)
+                5 = Departamento e Categoria (Fechado com total de Produtos)
+                */
+
+        		$.each( data, function(posicao,departamento) {
+                     i++;
+        			 aux_categoria = "";
+        			 $.each( departamento.categoria, function(aux, categoria) {
+					 	
+                        var badge = categoria.qtde != undefined && (Menu_Tipo==2||Menu_Tipo==5) ?'<span class="badge pull-right">'+categoria.qtde+'</span>':'';
+        				aux_categoria += '<li><a href="'+categoria.link+'"><span>'+categoria.nome+'</span>'+badge+'</a></li>';
+        			});
+        			items.push( '<li class="drop-li"><a href="javascript:void(0)" data-toggle="collapse" data-target="#toggleDemo'+i+'" data-parent="#sidenav1" class="'+collapsed+'"  aria-expanded="'+aria_expanded+'"><span>'+departamento.nome+'</span><div class="eng-i-dwn"><i class="material-icons">keyboard_arrow_down</i></div></a><div aria-expanded="'+aria_expanded+'" class="collapse '+open_drop+'" id="toggleDemo'+i+'"><ul class="nav nav-list">'+aux_categoria+'</ul></div>');
+                    itemsMobile.push( '<li><a href="javascript:void(0)" data-toggle="collapse" data-target="#toggleDemo1'+i+'mobile" data-parent="#sidenav2" class="collapsed"><span>'+departamento.nome+'</span></a><div class="collapse" id="toggleDemo1'+i+'mobile"><ul class="nav nav-list">'+aux_categoria+'</ul></div>');
+        		});
+        		$( "#cssmenu" ).append('<ul class="nav navbar-nav" id="sidenav1">'+items.join( "" )+'</ul>');
+                $( "#navbar3" ).append('<ul class="nav navbar-nav" id="sidenav2">'+itemsMobile.join( "" )+'</ul>');
+			    muda_tamanho();
+        	}).fail(function() {
+        	  //alert( "Erro ao carregar os departamentos!" );
+        	})
+        });
+		
+		//*********** menu de paginas internas *******/
+        $("#cssmenu_pagina_interna").ready(function () {
+        var jqxhr = $.getJSON( "json/paginas_internas.php", function() {}).done(function(data ) {
+        		 var items = [];
+        		 $.each( data, function(posicao,dado) {
+        			items.push( "<ul class='nav'><li><a href='interna.php?cod=" + dado.cod + "' target='_self' >" + dado.nome + "</a></li></ul>" );
+        		 });
+        		 $( "#cssmenu_pagina_interna" ).append(items.join( "" ));
+                 $( "#navbar4" ).append(items.join( "" ));
+        	}).fail(function() {
+        		//alert( "erro ao carregar categoria" );
+        	});
+        });
+		
+		
+		//*********** ajustes nos botoes e campos *******/
+        $('input[type="text"], input[type="submit"], input[type="password"], input[type="email"], .botao, input[type="number"], textarea, select').each(function() {
+            var t = $(this);
+            t.addClass('form-control');
+            if(t.hasClass('bot_entrar') || t.hasClass('NewsBtnEnviar')) {
+                t.addClass('btn btn-primary');
+            }
+        });
+
+
+
+
+
+		//************** ajuste nas paginas do sistema ********/
+        var d_i_f = $('.fretes-infosfinais .info-finais');
+
+        $('#separa-total').remove();
+
+        d_i_f.find('.main.label').css({
+            'font-weight': 'bold',
+            'font-size': '14px',
+            'margin-bottom': '5px'
+        }).removeClass('label'); //.addClass('col-md-12')
+
+        if(document.URL.indexOf('login') != -1) {
+            $('.login-panel').hide();
+        }
+        $('.titulo1').each(function() {
+            if($(this).text().indexOf('Nao') != -1 || $(this).text().indexOf('existe um p') != -1) {
+                $(this).addClass('alert alert-danger').css({
+                    'color': '#a94442',
+                    'padding': '30px 15px'
+                });
+            }    
+        });
+        $('.codKey .col-md-9').find('.col-md-3, .col-md-9').css({'width': '', 'padding': '0'});
+
+        $('.caixaTextoBorda.tabelaDePedidos').find('table').attr({
+            'cellpadding': '',
+            'width': ''
+        }).find('.tabela_adicionar td').css('border-top', '0')
+
+
+        if($('.titulo1.alert.alert-danger').length) $('.titulo1.alert.alert-danger').html($('.titulo1.alert.alert-danger').html().replace('<br>',''));
+        $('#id_bot_finalizar_pedido').click(function() {
+            $('#id_aguardando').hide();
+            if($('#id_aguardando').text().trim().length) {
+                $('#id_aguardando').fadeIn();
+            }
+        })
+        $('#id_fieldCod_Forma_Pagamento').change(function() {
+            $('#id_aguardando').hide();
+            if($('#id_aguardando').text().trim().length) {
+                $('#id_aguardando').fadeIn();
+            }
+        })
+
+
+        var el_cnt = $('#form_finalizar .table-responsive .Borda');
+        var cnt = el_cnt.contents();
+        el_cnt.replaceWith(cnt);
+
+
+        $(window).scroll(function() {
+            if ($(this).scrollTop()>200) {
+                $('#top-link-block').removeClass('hidden').affix({
+                    offset: {top:100}
+                });
+            }
+        });
+        $('#id_tabela_dados_pedido').find('hr').remove()
+        $('.caixa_login form[name="login"] input').css('width', '100%')
+        $('form[name="form_carrinho"] .Borda').find('table#id_tabela_carrinho').attr({
+            'cellpadding': '',
+            'width': ''
+        });
+
+        $('table[id^=id_dados_] tr').each(function() {
+            var lbl = $(this).find('td:first-child').html();
+            var inpt = $(this).find('td:last-child').html();
+            $(this).html('<p>'+lbl+'<br>'+inpt+'</p>');
+        });
+        $('.left-two-coluns').removeClass('left-two-coluns').addClass('col-md-8 col-sm-12 col-xs-12');
+        $('.right-two-coluns').removeClass('right-two-coluns').addClass('col-md-4 col-sm-12 col-xs-12 pull-right');
+
+        $('.codPromocional .tit').removeClass('tit').addClass('othertit'); //classes iguais
+        $('.engTitSubTit .tit').removeClass('tit').addClass('othertit');
+
+        var lres = $('.resposta-login');
+        var lresh = lres.html();
+        if(lresh && lresh.trim().length) {
+            lres.html('');
+            $('.eng-login-cadastro').before('<div class="alert alert-danger">'+lresh+'</div>');
+        }
+        if(Mypagina.indexOf('cliente_informacoes') != -1) {
+
+            var cadaBox = $('.meuPedidos-new .infoBoxContents .caixaTextoBorda');
+            var iconPessoais = cadaBox.find('.tabela_adicionar i')[0].outerHTML;
+            var iconContato = cadaBox.find('.tabela_adicionar i')[1].outerHTML;
+            var iconEndereco = cadaBox.find('.tabela_adicionar i')[2].outerHTML;
+
+            cadaBox.find('.tabela_adicionar').find('.titulo').remove();
+            cadaBox.remove();
+
+            $('.meuPedidos-new').first().after('<ul id="clientesInformacoes" class="nav nav-tabs nav-justified"><li class="active"><a data-toggle="tab" href="#pessoais">Detalhes Pessoais '+iconPessoais+'</a></li><li><a data-toggle="tab" href="#contato">Informações de Contato '+iconContato+'</a></li><li><a data-toggle="tab" href="#endereco">Seu Endereço '+iconEndereco+'</a></li></ul>');
+            $('.nav-tabs').after('<div id="clientesInformacoesTabContent" class="tab-content"><div id="pessoais" class="tab-pane fade in active row"><div class="caixaTextoBorda"></div></div><div id="contato" class="tab-pane fade row"><div class="caixaTextoBorda"></div></div><div id="endereco" class="tab-pane fade row"><div class="caixaTextoBorda"></div></div></div>');
+
+            $(cadaBox[0]).find('.tabela_adicionar').each(function(loop, el){
+
+                $(this).addClass('col-md-12');
+                $(el).find('.caixaTexto:first-child').addClass('col-md-2');
+                $(el).find('.caixaTexto:last-child').addClass('col-md-10');
+
+                if($(el).find('.caixaTexto').text().trim().length) {
+                    if(loop <=6) {
+                        $('.tab-content #pessoais .caixaTextoBorda').append(el);
+                    }else{
+                        $('.tab-content #contato .caixaTextoBorda').append(el);
+                    }
+                }
+            });
+            $(cadaBox[1]).find('.tabela_adicionar').each(function(loop, el){
+
+                $(this).addClass('col-md-12');
+                $(el).find('.caixaTexto:first-child').addClass('col-md-2');
+                $(el).find('.caixaTexto:last-child').addClass('col-md-10');
+
+                if($(el).find('.caixaTexto').text().trim().length) {
+                    $('.tab-content #endereco .caixaTextoBorda').append(el);
+                }
+            });
+        }
+        $('.new-version .titulo1').addClass('page-header');
+        $('.new-version .td_cliente').remove();
+
+        $('.smallText.texts-topo-caixa-borda.left').addClass('alert alert-info').find('font').remove();
+        var preenchiObri = $('.texts-topo-caixa-borda.right');
+        $('#engloba-passos').after('<div class="camposObri">'+preenchiObri.html()+'</div>');
+        preenchiObri.remove();
+
+
+        $('.new-version div .caixaTexto:first-child').addClass('col-md-4').css('padding-right', '0');
+        $('.new-version div .caixaTexto:last-child').addClass('col-md-8').css('padding-left', '0');
+
+        $('#res-captcha').addClass('alert alert-danger');
+
+        $('.link_caminho').first().before('<ol class="breadcrumb"></ol>');
+        $('.link_caminho').each(function(loop, el) {
+            var hT = $(this).html();
+            hT = hT.replace('>', '');
+            hT = hT.trim();
+
+            var hRT = $(this).attr('href');
+            var cRT = '';
+            var eRT = 'a';
+            if(hRT == undefined){
+                hRT = 'javascript:void(0)';
+                cRT = 'active';
+                eRT = 'span';
+            }
+
+            if(hT != ''){
+                $('ol.breadcrumb').append('<li id="caminholi'+loop+'" class="' + cRT + '"></li>');
+                $('ol.breadcrumb li#caminholi'+loop).append('<'+eRT+' id="caminhoa'+loop+'" href="' + hRT + '"></'+eRT+'>');
+                $('ol.breadcrumb li#caminholi'+loop+' '+eRT+'#caminhoa'+loop).append(hT);
+            }
+        })
+        $('span.link_caminho,a.link_caminho').remove();
+
+        // $('.navbar-brand').ready(function(){
+        //     var first_height = $('.navbar-brand').height() + 30; // + 15 referente ao padding
+        //     first_height = (first_height - 44) /2;
+
+        //     $('.navbar-default .nav.navbar-nav, [data-target^="#navbar"]').css({'margin-top':first_height+'px','margin-bottom':first_height+'px'})
+        // });
+        function GetIEVersion() {
+            var sAgent=window.navigator.userAgent,Idx=sAgent.indexOf("MSIE");
+            if (Idx>0) { 
+                return parseInt(sAgent.substring(Idx+ 5, sAgent.indexOf(".", Idx)));
+            } else if (!!navigator.userAgent.match(/Trident\/7\./)) {
+                return 11;
+            } else {
+                return 0;
+            }
+        }
+        if(GetIEVersion()>0) {//ajuste para ie
+            $('.vertical-align>[class^="col-"],.vertical-align>[class*="col-"]').css('display','block');
+            $('#top-link-block').css('right','30px');
+        }
+		
+		//*********** botao resumo do produto (vitrine) *****/
+        $('#modal-produto').on('shown.bs.modal', function (e) {
+            var el = $(e.target).find('#titulo-prdt')[0],
+            btn_cmp = $('#comprar-prdt'),
+            btn_cot = $('#soli-cot'),
+            btn_ind = $('#modal-produto #img-indisponivel');
+
+            if($(el).text().trim().indexOf('Sob consulta!')!=-1) {
+                btn_cot.show();
+                btn_cmp.hide();
+                btn_ind.hide();
+            } else if($('a.bot_resumo-new').data('indisponivel')) {
+                btn_ind.show();
+                btn_cmp.hide();
+                btn_cot.hide();
+            }else {
+                btn_cmp.show();
+                btn_cot.hide();
+                btn_ind.hide();
+            }
+        });
+
+		//********** verifica conteudo nas abas direita e esquerda e ajusta os tamanhos *******/
+        var elRight = $('#id_div_direita');
+        var elCenter = $('#id_td_central');
+
+        if(($('#id_banner_Lateral_Direita').length>0 && $('#id_banner_Lateral_Direita').html().trim().length ) || ($('#contentDireitaCol').length && $('#contentDireitaCol').html().trim().length)) {
+            // Existe algum conteudo na coluna da direita
+            elCenter.removeClass('col-md-9').addClass('col-md-7');
+            elRight.show();
+        }else{
+            // Nao existe algum conteudo na coluna da direita
+            elCenter.removeClass('col-md-7').addClass('col-md-9');
+            elRight.hide();
+        }
+
+       
+        if($('.class_msg_finalizacao').length) {
+            $('.class_msg_finalizacao').addClass('alert alert-success').find('br').remove();
+        }
+   
+   
+		//icones do atendimento online
+		if('[fone]' ==''){
+			$('.telefone_loja').hide();
+		}
+		if('[cod_atendimento_online]' !=''){    
+        	var jqxhr = $.getJSON( "json/atendimento_htalk.php?id=[cod_atendimento_online]", function() {})
+			.done(function(data ) {
+				if(data.status==1){
+				  	$('.barra1_chat').addClass('online');
+				}else{
+					$('.barra1_chat').removeClass('online');
+				}
+			}).fail(function() {
+        		console.log('Erro ao carregar json.');  
+			});
+			
+		}else{
+			$('.class_atendimento_online').hide();
+        }
+
+        // Assine nossa newsletter modificada
+        $('#IdEmailNews').remove();
+        $(".RodNewsletter .NewsletterGeral .NewsDir .NewsCampoEmail .col-md-9").append('<div class="row"><div class="col-md-6"><input placeholder="Nome" class="NewsInserirEmail form-control" id="IdNomeNews" type="text"></div><div class="col-md-6"><input id="IdEmailNews" placeholder="E-mail" class="NewsInserirEmail form-control" id="IdEmailNews" type="text"></div></div>');
+        $('.NewsDir .NewsCampoEmail .col-md-10.col-md-offset-1').removeClass('col-md-10 col-md-offset-1').addClass('col-md-9');
+        $('.NewsDir .NewsCampoEmail > .row').prepend('<div class="col-md-3"><h4>Assine nossa Newsletter.</h4><h5>Receba novidades, ofertas e cupons.</h5></div>');
+        $(".RodNewsletter .NewsletterGeral .NewsDir .NewsCampoEmail .col-md-3 input").removeAttr('onclick', 'cadastra_email()');
+        $(".RodNewsletter .NewsletterGeral .NewsDir .NewsCampoEmail .col-md-3 input").attr('onclick', 'cadastra_email2()');
+
+        $('footer a[href^="http://www.facebook.com.br"] img').attr('src', 'arquivos_loja/14879/arquivo/fb-icon.png');
+		   
+    });
+
+    function cadastra_email2(){
+        if($('#IdEmailNews').length>0 && $('#IdEmailNews').val()!=''){	
+            //inseri dados
+            var jqxhr = $.post( 'json/cadastra_email.php?acao=1', { fieldEmail: $('#IdEmailNews').val(), fieldNome: $('#IdNomeNews').val()} )
+            .done(function( data ) {
+                //	alert(data);
+                aux = jQuery.parseJSON(data);	
+                if(aux.codigo== '1'){//cadastrado	
+                    $('.NewsMensagem').removeClass('newsletter_erro');
+                    $('.NewsMensagem').html(aux.msg);
+                    $('#IdEmailNews').val('');
+                }else{
+                    $('.NewsMensagem').addClass('newsletter_erro');
+                    $('.NewsMensagem').html('* ' + aux.msg + ' *');	
+                }
+            })
+            .fail(function() {
+                alert( 'Erro ao cadastrar o e-mail.' + data);
+            });	
+        }else{
+            $('.NewsMensagem').addClass('newsletter_erro');
+            $('.NewsMensagem').html('*** Informe seu e-mail. ***');	
+        }
+    }
+</script>
+<style>
+    #slide-destaque {
+        overflow: hidden;
+        background-image: url('arquivos_loja/14879/arquivo/layer-2-min.png')!important;
+        background-attachment: initial!important;
+        background-position: center!important;
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+    }
+</style>
